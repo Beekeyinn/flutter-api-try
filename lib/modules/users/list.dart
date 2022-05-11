@@ -57,6 +57,7 @@ class UserListState extends State<UserList>{
         titleTextStyle: const TextStyle(color:Colors.red),
       ),
       body:Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SafeArea(
               child:SingleChildScrollView(
@@ -76,6 +77,7 @@ class UserListState extends State<UserList>{
           ),
           Row(
             mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
                   TextButton(onPressed: (){
